@@ -43,8 +43,18 @@ WantedBy=multi-user.target
 ```
 in the above code, you have to edit */path/SimpleGitAutoDeploy.py* to the real path of SimpleGitAutoDeploy.py file. also *User* and *Group* are set to *root* but it's better if you change these parameters to a normal user/group.
 
-#### Start the service
+#### Start and enable the service
 ```
 sudo systemctl start simple-git-auto-deploy
 sudo systemctl enable simple-git-auto-deploy
-``` 
+```
+
+### Setting webhooks from git
+You must set a webhook in your git repository then when you push anything in your repository, your repository sends a post request to your server and the SimpleGitAutoDeploy handles the rest.
+
+1. Go to your repository -> Settings -> Webhooks -> Add webhook
+2. In "Payload URL", enter your hostname and port (default port:8075)
+3. Click "Add webhook"
+
+**Note: SimpleGitAutoDeploy only supports GitHub for now.**
+
