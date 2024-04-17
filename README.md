@@ -42,3 +42,9 @@ TimeoutSec=300
 WantedBy=multi-user.target
 ```
 in the above code, you have to edit */path/SimpleGitAutoDeploy.py* to the real path of SimpleGitAutoDeploy.py file. also *User* and *Group* are set to *root* but it's better if you change these parameters to a normal user/group.
+
+#### Start the service
+```
+sudo systemctl start simple-git-auto-deploy
+sudo systemctl enable simple-git-auto-deploy
+``` 
