@@ -1,0 +1,15 @@
+{
+    "port": 8075,
+    "repositories": [
+        {
+            "url": "https://github.com/amirhnir/project1",
+            "path": "/home/user/project1",
+            "deploy": "sudo systemctl restart project"
+        },
+        {
+            "url": "https://github.com/amirhnir/project2",
+            "path": "/home/user/project2",
+            "deploy": "python app.py"
+        }
+    ]
+}

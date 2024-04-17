@@ -1,0 +1,10 @@
+{
+        "port": 8075,
+        "repositories": [
+                {
+                        "url": "",
+                        "path": "",
+                        "deploy": ""
+                }
+        ]
+}
