@@ -34,6 +34,7 @@ After=network.target
 Type=simple
 User=root
 Group=root
+WorkingDirectory=/path
 ExecStart=/usr/bin/python /path/SimpleGitAutoDeploy.py
 
 TimeoutSec=300
